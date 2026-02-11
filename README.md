@@ -1,5 +1,5 @@
 # SousChefAI
-
+Note - this is an AI generated readme, and will be updated in the future.
 A production-ready iOS app that uses multimodal AI to scan ingredients, generate personalized recipes, and provide real-time cooking guidance.
 
 ## Features
@@ -254,5 +254,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 For issues, questions, or feature requests, please open an issue on GitHub.
 
 ---
-
-**Built with ❤️ using Swift 6 and SwiftUI**
