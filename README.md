@@ -1,5 +1,5 @@
-# SousChefAI
 Note - this is an AI generated readme, and will be updated in the future.
+# SousChefAI
 A production-ready iOS app that uses multimodal AI to scan ingredients, generate personalized recipes, and provide real-time cooking guidance.
 
 ## Features
