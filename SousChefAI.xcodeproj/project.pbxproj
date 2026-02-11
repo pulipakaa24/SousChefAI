@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		865424082F3D142A00B4257E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 865424072F3D142A00B4257E /* README.md */; };
+		8654240A2F3D151800B4257E /* SETUP_GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 865424092F3D151800B4257E /* SETUP_GUIDE.md */; };
+		8654240E2F3D17FE00B4257E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8654240D2F3D17FE00B4257E /* PrivacyInfo.xcprivacy */; };
+		865424102F3D181000B4257E /* PRIVACY_SETUP.md in Resources */ = {isa = PBXBuildFile; fileRef = 8654240F2F3D181000B4257E /* PRIVACY_SETUP.md */; };
+		865424122F3D185100B4257E /* QUICKSTART.md in Resources */ = {isa = PBXBuildFile; fileRef = 865424112F3D185100B4257E /* QUICKSTART.md */; };
+		865424142F3D188500B4257E /* PROJECT_SUMMARY.md in Resources */ = {isa = PBXBuildFile; fileRef = 865424132F3D188500B4257E /* PROJECT_SUMMARY.md */; };
+		865424162F3D1A7100B4257E /* SWIFT6_WARNINGS.md in Resources */ = {isa = PBXBuildFile; fileRef = 865424152F3D1A7100B4257E /* SWIFT6_WARNINGS.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		86FE8EEB2F3CF75900A1BEA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		865424072F3D142A00B4257E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		865424092F3D151800B4257E /* SETUP_GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SETUP_GUIDE.md; sourceTree = "<group>"; };
+		8654240D2F3D17FE00B4257E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		8654240F2F3D181000B4257E /* PRIVACY_SETUP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY_SETUP.md; sourceTree = "<group>"; };
+		865424112F3D185100B4257E /* QUICKSTART.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = QUICKSTART.md; sourceTree = "<group>"; };
+		865424132F3D188500B4257E /* PROJECT_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PROJECT_SUMMARY.md; sourceTree = "<group>"; };
+		865424152F3D1A7100B4257E /* SWIFT6_WARNINGS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SWIFT6_WARNINGS.md; sourceTree = "<group>"; };
 		86FE8EDD2F3CF75800A1BEA6 /* SousChefAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SousChefAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FE8EEA2F3CF75900A1BEA6 /* SousChefAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SousChefAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FE8EF42F3CF75900A1BEA6 /* SousChefAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SousChefAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +96,13 @@
 				86FE8EED2F3CF75900A1BEA6 /* SousChefAITests */,
 				86FE8EF72F3CF75900A1BEA6 /* SousChefAIUITests */,
 				86FE8EDE2F3CF75800A1BEA6 /* Products */,
+				865424072F3D142A00B4257E /* README.md */,
+				865424092F3D151800B4257E /* SETUP_GUIDE.md */,
+				8654240D2F3D17FE00B4257E /* PrivacyInfo.xcprivacy */,
+				8654240F2F3D181000B4257E /* PRIVACY_SETUP.md */,
+				865424112F3D185100B4257E /* QUICKSTART.md */,
+				865424132F3D188500B4257E /* PROJECT_SUMMARY.md */,
+				865424152F3D1A7100B4257E /* SWIFT6_WARNINGS.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +236,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865424142F3D188500B4257E /* PROJECT_SUMMARY.md in Resources */,
+				865424082F3D142A00B4257E /* README.md in Resources */,
+				865424122F3D185100B4257E /* QUICKSTART.md in Resources */,
+				8654240A2F3D151800B4257E /* SETUP_GUIDE.md in Resources */,
+				865424162F3D1A7100B4257E /* SWIFT6_WARNINGS.md in Resources */,
+				865424102F3D181000B4257E /* PRIVACY_SETUP.md in Resources */,
+				8654240E2F3D17FE00B4257E /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +431,10 @@
 				DEVELOPMENT_TEAM = YK2DB9NT3S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "SousChefAI needs camera access to scan your fridge for ingredients and monitor your cooking progress in real-time.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SousChefAI uses the microphone to provide voice-guided cooking instructions.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,6 +467,10 @@
 				DEVELOPMENT_TEAM = YK2DB9NT3S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "SousChefAI needs camera access to scan your fridge for ingredients and monitor your cooking progress in real-time.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SousChefAI uses the microphone to provide voice-guided cooking instructions.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
