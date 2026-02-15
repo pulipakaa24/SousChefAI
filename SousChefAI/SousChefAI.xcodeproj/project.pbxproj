@@ -6,58 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		865424082F3D142A00B4257E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 865424072F3D142A00B4257E /* README.md */; };
-		8654240A2F3D151800B4257E /* SETUP_GUIDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 865424092F3D151800B4257E /* SETUP_GUIDE.md */; };
-		8654240E2F3D17FE00B4257E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 8654240D2F3D17FE00B4257E /* PrivacyInfo.xcprivacy */; };
-		865424102F3D181000B4257E /* PRIVACY_SETUP.md in Resources */ = {isa = PBXBuildFile; fileRef = 8654240F2F3D181000B4257E /* PRIVACY_SETUP.md */; };
-		865424122F3D185100B4257E /* QUICKSTART.md in Resources */ = {isa = PBXBuildFile; fileRef = 865424112F3D185100B4257E /* QUICKSTART.md */; };
-		865424142F3D188500B4257E /* PROJECT_SUMMARY.md in Resources */ = {isa = PBXBuildFile; fileRef = 865424132F3D188500B4257E /* PROJECT_SUMMARY.md */; };
-		865424162F3D1A7100B4257E /* SWIFT6_WARNINGS.md in Resources */ = {isa = PBXBuildFile; fileRef = 865424152F3D1A7100B4257E /* SWIFT6_WARNINGS.md */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
-		86FE8EEB2F3CF75900A1BEA6 /* PBXContainerItemProxy */ = {
+		86CD17CF2F419D8800C1F693 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 86FE8ED52F3CF75800A1BEA6 /* Project object */;
+			containerPortal = 86CD17B92F419D8600C1F693 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 86FE8EDC2F3CF75800A1BEA6;
+			remoteGlobalIDString = 86CD17C02F419D8600C1F693;
 			remoteInfo = SousChefAI;
 		};
-		86FE8EF52F3CF75900A1BEA6 /* PBXContainerItemProxy */ = {
+		86CD17D92F419D8800C1F693 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 86FE8ED52F3CF75800A1BEA6 /* Project object */;
+			containerPortal = 86CD17B92F419D8600C1F693 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 86FE8EDC2F3CF75800A1BEA6;
+			remoteGlobalIDString = 86CD17C02F419D8600C1F693;
 			remoteInfo = SousChefAI;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		865424072F3D142A00B4257E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		865424092F3D151800B4257E /* SETUP_GUIDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SETUP_GUIDE.md; sourceTree = "<group>"; };
-		8654240D2F3D17FE00B4257E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		8654240F2F3D181000B4257E /* PRIVACY_SETUP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY_SETUP.md; sourceTree = "<group>"; };
-		865424112F3D185100B4257E /* QUICKSTART.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = QUICKSTART.md; sourceTree = "<group>"; };
-		865424132F3D188500B4257E /* PROJECT_SUMMARY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PROJECT_SUMMARY.md; sourceTree = "<group>"; };
-		865424152F3D1A7100B4257E /* SWIFT6_WARNINGS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SWIFT6_WARNINGS.md; sourceTree = "<group>"; };
-		86FE8EDD2F3CF75800A1BEA6 /* SousChefAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SousChefAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		86FE8EEA2F3CF75900A1BEA6 /* SousChefAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SousChefAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		86FE8EF42F3CF75900A1BEA6 /* SousChefAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SousChefAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86CD17C12F419D8600C1F693 /* SousChefAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SousChefAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86CD17CE2F419D8800C1F693 /* SousChefAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SousChefAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86CD17D82F419D8800C1F693 /* SousChefAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SousChefAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		86FE8EDF2F3CF75800A1BEA6 /* SousChefAI */ = {
+		86CD17C32F419D8600C1F693 /* SousChefAI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SousChefAI;
 			sourceTree = "<group>";
 		};
-		86FE8EED2F3CF75900A1BEA6 /* SousChefAITests */ = {
+		86CD17D12F419D8800C1F693 /* SousChefAITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SousChefAITests;
 			sourceTree = "<group>";
 		};
-		86FE8EF72F3CF75900A1BEA6 /* SousChefAIUITests */ = {
+		86CD17DB2F419D8800C1F693 /* SousChefAIUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SousChefAIUITests;
 			sourceTree = "<group>";
@@ -65,21 +48,21 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		86FE8EDA2F3CF75800A1BEA6 /* Frameworks */ = {
+		86CD17BE2F419D8600C1F693 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86FE8EE72F3CF75900A1BEA6 /* Frameworks */ = {
+		86CD17CB2F419D8800C1F693 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86FE8EF12F3CF75900A1BEA6 /* Frameworks */ = {
+		86CD17D52F419D8800C1F693 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,29 +72,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		86FE8ED42F3CF75800A1BEA6 = {
+		86CD17B82F419D8600C1F693 = {
 			isa = PBXGroup;
 			children = (
-				86FE8EDF2F3CF75800A1BEA6 /* SousChefAI */,
-				86FE8EED2F3CF75900A1BEA6 /* SousChefAITests */,
-				86FE8EF72F3CF75900A1BEA6 /* SousChefAIUITests */,
-				86FE8EDE2F3CF75800A1BEA6 /* Products */,
-				865424072F3D142A00B4257E /* README.md */,
-				865424092F3D151800B4257E /* SETUP_GUIDE.md */,
-				8654240D2F3D17FE00B4257E /* PrivacyInfo.xcprivacy */,
-				8654240F2F3D181000B4257E /* PRIVACY_SETUP.md */,
-				865424112F3D185100B4257E /* QUICKSTART.md */,
-				865424132F3D188500B4257E /* PROJECT_SUMMARY.md */,
-				865424152F3D1A7100B4257E /* SWIFT6_WARNINGS.md */,
+				86CD17C32F419D8600C1F693 /* SousChefAI */,
+				86CD17D12F419D8800C1F693 /* SousChefAITests */,
+				86CD17DB2F419D8800C1F693 /* SousChefAIUITests */,
+				86CD17C22F419D8600C1F693 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		86FE8EDE2F3CF75800A1BEA6 /* Products */ = {
+		86CD17C22F419D8600C1F693 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86FE8EDD2F3CF75800A1BEA6 /* SousChefAI.app */,
-				86FE8EEA2F3CF75900A1BEA6 /* SousChefAITests.xctest */,
-				86FE8EF42F3CF75900A1BEA6 /* SousChefAIUITests.xctest */,
+				86CD17C12F419D8600C1F693 /* SousChefAI.app */,
+				86CD17CE2F419D8800C1F693 /* SousChefAITests.xctest */,
+				86CD17D82F419D8800C1F693 /* SousChefAIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,141 +95,134 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		86FE8EDC2F3CF75800A1BEA6 /* SousChefAI */ = {
+		86CD17C02F419D8600C1F693 /* SousChefAI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86FE8EFE2F3CF75900A1BEA6 /* Build configuration list for PBXNativeTarget "SousChefAI" */;
+			buildConfigurationList = 86CD17E22F419D8800C1F693 /* Build configuration list for PBXNativeTarget "SousChefAI" */;
 			buildPhases = (
-				86FE8ED92F3CF75800A1BEA6 /* Sources */,
-				86FE8EDA2F3CF75800A1BEA6 /* Frameworks */,
-				86FE8EDB2F3CF75800A1BEA6 /* Resources */,
+				86CD17BD2F419D8600C1F693 /* Sources */,
+				86CD17BE2F419D8600C1F693 /* Frameworks */,
+				86CD17BF2F419D8600C1F693 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				86FE8EDF2F3CF75800A1BEA6 /* SousChefAI */,
+				86CD17C32F419D8600C1F693 /* SousChefAI */,
 			);
 			name = SousChefAI;
 			packageProductDependencies = (
 			);
 			productName = SousChefAI;
-			productReference = 86FE8EDD2F3CF75800A1BEA6 /* SousChefAI.app */;
+			productReference = 86CD17C12F419D8600C1F693 /* SousChefAI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		86FE8EE92F3CF75900A1BEA6 /* SousChefAITests */ = {
+		86CD17CD2F419D8800C1F693 /* SousChefAITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86FE8F012F3CF75900A1BEA6 /* Build configuration list for PBXNativeTarget "SousChefAITests" */;
+			buildConfigurationList = 86CD17E52F419D8800C1F693 /* Build configuration list for PBXNativeTarget "SousChefAITests" */;
 			buildPhases = (
-				86FE8EE62F3CF75900A1BEA6 /* Sources */,
-				86FE8EE72F3CF75900A1BEA6 /* Frameworks */,
-				86FE8EE82F3CF75900A1BEA6 /* Resources */,
+				86CD17CA2F419D8800C1F693 /* Sources */,
+				86CD17CB2F419D8800C1F693 /* Frameworks */,
+				86CD17CC2F419D8800C1F693 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				86FE8EEC2F3CF75900A1BEA6 /* PBXTargetDependency */,
+				86CD17D02F419D8800C1F693 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				86FE8EED2F3CF75900A1BEA6 /* SousChefAITests */,
+				86CD17D12F419D8800C1F693 /* SousChefAITests */,
 			);
 			name = SousChefAITests;
 			packageProductDependencies = (
 			);
 			productName = SousChefAITests;
-			productReference = 86FE8EEA2F3CF75900A1BEA6 /* SousChefAITests.xctest */;
+			productReference = 86CD17CE2F419D8800C1F693 /* SousChefAITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		86FE8EF32F3CF75900A1BEA6 /* SousChefAIUITests */ = {
+		86CD17D72F419D8800C1F693 /* SousChefAIUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86FE8F042F3CF75900A1BEA6 /* Build configuration list for PBXNativeTarget "SousChefAIUITests" */;
+			buildConfigurationList = 86CD17E82F419D8800C1F693 /* Build configuration list for PBXNativeTarget "SousChefAIUITests" */;
 			buildPhases = (
-				86FE8EF02F3CF75900A1BEA6 /* Sources */,
-				86FE8EF12F3CF75900A1BEA6 /* Frameworks */,
-				86FE8EF22F3CF75900A1BEA6 /* Resources */,
+				86CD17D42F419D8800C1F693 /* Sources */,
+				86CD17D52F419D8800C1F693 /* Frameworks */,
+				86CD17D62F419D8800C1F693 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				86FE8EF62F3CF75900A1BEA6 /* PBXTargetDependency */,
+				86CD17DA2F419D8800C1F693 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				86FE8EF72F3CF75900A1BEA6 /* SousChefAIUITests */,
+				86CD17DB2F419D8800C1F693 /* SousChefAIUITests */,
 			);
 			name = SousChefAIUITests;
 			packageProductDependencies = (
 			);
 			productName = SousChefAIUITests;
-			productReference = 86FE8EF42F3CF75900A1BEA6 /* SousChefAIUITests.xctest */;
+			productReference = 86CD17D82F419D8800C1F693 /* SousChefAIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		86FE8ED52F3CF75800A1BEA6 /* Project object */ = {
+		86CD17B92F419D8600C1F693 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2620;
-				LastUpgradeCheck = 2620;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
-					86FE8EDC2F3CF75800A1BEA6 = {
-						CreatedOnToolsVersion = 26.2;
+					86CD17C02F419D8600C1F693 = {
+						CreatedOnToolsVersion = 26.3;
 					};
-					86FE8EE92F3CF75900A1BEA6 = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = 86FE8EDC2F3CF75800A1BEA6;
+					86CD17CD2F419D8800C1F693 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 86CD17C02F419D8600C1F693;
 					};
-					86FE8EF32F3CF75900A1BEA6 = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = 86FE8EDC2F3CF75800A1BEA6;
+					86CD17D72F419D8800C1F693 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 86CD17C02F419D8600C1F693;
 					};
 				};
 			};
-			buildConfigurationList = 86FE8ED82F3CF75800A1BEA6 /* Build configuration list for PBXProject "SousChefAI" */;
+			buildConfigurationList = 86CD17BC2F419D8600C1F693 /* Build configuration list for PBXProject "SousChefAI" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 86FE8ED42F3CF75800A1BEA6;
+			mainGroup = 86CD17B82F419D8600C1F693;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 86FE8EDE2F3CF75800A1BEA6 /* Products */;
+			productRefGroup = 86CD17C22F419D8600C1F693 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				86FE8EDC2F3CF75800A1BEA6 /* SousChefAI */,
-				86FE8EE92F3CF75900A1BEA6 /* SousChefAITests */,
-				86FE8EF32F3CF75900A1BEA6 /* SousChefAIUITests */,
+				86CD17C02F419D8600C1F693 /* SousChefAI */,
+				86CD17CD2F419D8800C1F693 /* SousChefAITests */,
+				86CD17D72F419D8800C1F693 /* SousChefAIUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		86FE8EDB2F3CF75800A1BEA6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				865424142F3D188500B4257E /* PROJECT_SUMMARY.md in Resources */,
-				865424082F3D142A00B4257E /* README.md in Resources */,
-				865424122F3D185100B4257E /* QUICKSTART.md in Resources */,
-				8654240A2F3D151800B4257E /* SETUP_GUIDE.md in Resources */,
-				865424162F3D1A7100B4257E /* SWIFT6_WARNINGS.md in Resources */,
-				865424102F3D181000B4257E /* PRIVACY_SETUP.md in Resources */,
-				8654240E2F3D17FE00B4257E /* PrivacyInfo.xcprivacy in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86FE8EE82F3CF75900A1BEA6 /* Resources */ = {
+		86CD17BF2F419D8600C1F693 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86FE8EF22F3CF75900A1BEA6 /* Resources */ = {
+		86CD17CC2F419D8800C1F693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86CD17D62F419D8800C1F693 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,21 +232,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		86FE8ED92F3CF75800A1BEA6 /* Sources */ = {
+		86CD17BD2F419D8600C1F693 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86FE8EE62F3CF75900A1BEA6 /* Sources */ = {
+		86CD17CA2F419D8800C1F693 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86FE8EF02F3CF75900A1BEA6 /* Sources */ = {
+		86CD17D42F419D8800C1F693 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,20 +256,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		86FE8EEC2F3CF75900A1BEA6 /* PBXTargetDependency */ = {
+		86CD17D02F419D8800C1F693 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 86FE8EDC2F3CF75800A1BEA6 /* SousChefAI */;
-			targetProxy = 86FE8EEB2F3CF75900A1BEA6 /* PBXContainerItemProxy */;
+			target = 86CD17C02F419D8600C1F693 /* SousChefAI */;
+			targetProxy = 86CD17CF2F419D8800C1F693 /* PBXContainerItemProxy */;
 		};
-		86FE8EF62F3CF75900A1BEA6 /* PBXTargetDependency */ = {
+		86CD17DA2F419D8800C1F693 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 86FE8EDC2F3CF75800A1BEA6 /* SousChefAI */;
-			targetProxy = 86FE8EF52F3CF75900A1BEA6 /* PBXContainerItemProxy */;
+			target = 86CD17C02F419D8600C1F693 /* SousChefAI */;
+			targetProxy = 86CD17D92F419D8800C1F693 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		86FE8EFC2F3CF75900A1BEA6 /* Debug */ = {
+		86CD17E02F419D8800C1F693 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,11 +330,10 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
-		86FE8EFD2F3CF75900A1BEA6 /* Release */ = {
+		86CD17E12F419D8800C1F693 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -418,12 +386,11 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		86FE8EFF2F3CF75900A1BEA6 /* Debug */ = {
+		86CD17E32F419D8800C1F693 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -433,13 +400,11 @@
 				DEVELOPMENT_TEAM = YK2DB9NT3S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "SousChefAI needs camera access to scan your fridge for ingredients and monitor your cooking progress in real-time.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SousChefAI uses the microphone to provide voice-guided cooking instructions.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = CAMERA_USAGE_DESCRIPTION;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,7 +424,7 @@
 			};
 			name = Debug;
 		};
-		86FE8F002F3CF75900A1BEA6 /* Release */ = {
+		86CD17E42F419D8800C1F693 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -469,13 +434,11 @@
 				DEVELOPMENT_TEAM = YK2DB9NT3S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSCameraUsageDescription = "SousChefAI needs camera access to scan your fridge for ingredients and monitor your cooking progress in real-time.";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SousChefAI uses the microphone to provide voice-guided cooking instructions.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = CAMERA_USAGE_DESCRIPTION;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -495,7 +458,7 @@
 			};
 			name = Release;
 		};
-		86FE8F022F3CF75900A1BEA6 /* Debug */ = {
+		86CD17E62F419D8800C1F693 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,7 +480,7 @@
 			};
 			name = Debug;
 		};
-		86FE8F032F3CF75900A1BEA6 /* Release */ = {
+		86CD17E72F419D8800C1F693 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -539,7 +502,7 @@
 			};
 			name = Release;
 		};
-		86FE8F052F3CF75900A1BEA6 /* Debug */ = {
+		86CD17E92F419D8800C1F693 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -559,7 +522,7 @@
 			};
 			name = Debug;
 		};
-		86FE8F062F3CF75900A1BEA6 /* Release */ = {
+		86CD17EA2F419D8800C1F693 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -582,43 +545,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		86FE8ED82F3CF75800A1BEA6 /* Build configuration list for PBXProject "SousChefAI" */ = {
+		86CD17BC2F419D8600C1F693 /* Build configuration list for PBXProject "SousChefAI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86FE8EFC2F3CF75900A1BEA6 /* Debug */,
-				86FE8EFD2F3CF75900A1BEA6 /* Release */,
+				86CD17E02F419D8800C1F693 /* Debug */,
+				86CD17E12F419D8800C1F693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86FE8EFE2F3CF75900A1BEA6 /* Build configuration list for PBXNativeTarget "SousChefAI" */ = {
+		86CD17E22F419D8800C1F693 /* Build configuration list for PBXNativeTarget "SousChefAI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86FE8EFF2F3CF75900A1BEA6 /* Debug */,
-				86FE8F002F3CF75900A1BEA6 /* Release */,
+				86CD17E32F419D8800C1F693 /* Debug */,
+				86CD17E42F419D8800C1F693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86FE8F012F3CF75900A1BEA6 /* Build configuration list for PBXNativeTarget "SousChefAITests" */ = {
+		86CD17E52F419D8800C1F693 /* Build configuration list for PBXNativeTarget "SousChefAITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86FE8F022F3CF75900A1BEA6 /* Debug */,
-				86FE8F032F3CF75900A1BEA6 /* Release */,
+				86CD17E62F419D8800C1F693 /* Debug */,
+				86CD17E72F419D8800C1F693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86FE8F042F3CF75900A1BEA6 /* Build configuration list for PBXNativeTarget "SousChefAIUITests" */ = {
+		86CD17E82F419D8800C1F693 /* Build configuration list for PBXNativeTarget "SousChefAIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86FE8F052F3CF75900A1BEA6 /* Debug */,
-				86FE8F062F3CF75900A1BEA6 /* Release */,
+				86CD17E92F419D8800C1F693 /* Debug */,
+				86CD17EA2F419D8800C1F693 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 86FE8ED52F3CF75800A1BEA6 /* Project object */;
+	rootObject = 86CD17B92F419D8600C1F693 /* Project object */;
 }
