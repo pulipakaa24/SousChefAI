@@ -2,29 +2,47 @@
 //  ScannerView.swift
 //  SousChefAI
 //
-//  Camera view for scanning and detecting ingredients in real-time
+//  AR camera view for scanning and detecting ingredients in real-time
 //
 
 import SwiftUI
-import AVFoundation
+import ARKit
+import RealityKit
 
 struct ScannerView: View {
     @StateObject private var viewModel = ScannerViewModel()
     @State private var showingInventory = false
     @State private var showingManualEntry = false
+    @State private var detectedPlanes = 0
+    @State private var lastRaycastResult = ""
+    @State private var showARView = false
     
     var body: some View {
         NavigationStack {
             ZStack {
-                // Camera preview
-                CameraPreviewView(previewLayer: viewModel.getPreviewLayer())
+                // AR camera preview or regular camera
+                if showARView {
+                    ARViewContainer(
+                        detectedPlanes: $detectedPlanes,
+                        lastRaycastResult: $lastRaycastResult
+                    )
                     .ignoresSafeArea()
+                } else {
+                    CameraPreviewView(previewLayer: viewModel.getPreviewLayer())
+                        .ignoresSafeArea()
+                }
                 
                 // Overlay UI
                 VStack {
                     // Top status bar
                     statusBar
                         .padding()
+                    
+                    // AR Debug info (only when AR is active)
+                    if showARView {
+                        arDebugInfo
+                            .padding(.horizontal)
+                    }
                     
                     Spacer()
                     
@@ -38,7 +56,7 @@ struct ScannerView: View {
                         .padding()
                 }
             }
-            .navigationTitle("Scan Ingredients")
+            .navigationTitle(showARView ? "AR Scanner" : "Camera Preview")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -50,8 +68,10 @@ struct ScannerView: View {
                 }
             }
             .task {
-                await viewModel.setupCamera()
-                viewModel.startCamera()
+                if !showARView {
+                    await viewModel.setupCamera()
+                    viewModel.startCamera()
+                }
             }
             .onDisappear {
                 viewModel.cleanup()
@@ -81,7 +101,7 @@ struct ScannerView: View {
     private var statusBar: some View {
         HStack {
             VStack(alignment: .leading, spacing: 4) {
-                Text(viewModel.scanProgress)
+                Text(showARView ? "AR Mode Active" : viewModel.scanProgress)
                     .font(.headline)
                     .foregroundStyle(.white)
                 
@@ -105,6 +125,23 @@ struct ScannerView: View {
         .padding()
         .background(.ultraThinMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+    
+    private var arDebugInfo: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text("Detected Planes: \(detectedPlanes)")
+                .font(.caption)
+                .foregroundStyle(.white)
+            
+            if !lastRaycastResult.isEmpty {
+                Text(lastRaycastResult)
+                    .font(.caption2)
+                    .foregroundStyle(.white)
+            }
+        }
+        .padding(8)
+        .background(.ultraThinMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
     }
     
     private var detectedIngredientsOverlay: some View {
@@ -131,30 +168,54 @@ struct ScannerView: View {
     
     private var controlsBar: some View {
         VStack(spacing: 16) {
-            // Main action button
-            if viewModel.isScanning {
+            // AR Toggle button
+            if !viewModel.isScanning {
                 Button {
-                    viewModel.stopScanning()
+                    withAnimation {
+                        showARView.toggle()
+                        if !showARView {
+                            viewModel.startCamera()
+                        } else {
+                            viewModel.stopCamera()
+                        }
+                    }
                 } label: {
-                    Label("Stop Scanning", systemImage: "stop.circle.fill")
+                    Label(showARView ? "Exit AR Mode" : "Start AR Scan", systemImage: showARView ? "camera.fill" : "arkit")
                         .font(.headline)
                         .foregroundStyle(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.red)
+                        .background(showARView ? Color.orange : Color.blue)
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
-            } else {
-                Button {
-                    viewModel.startScanning()
-                } label: {
-                    Label("Scan Fridge", systemImage: "camera.fill")
-                        .font(.headline)
-                        .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.blue)
-                        .clipShape(RoundedRectangle(cornerRadius: 16))
+            }
+            
+            // Main scanning action button (only in non-AR mode)
+            if !showARView {
+                if viewModel.isScanning {
+                    Button {
+                        viewModel.stopScanning()
+                    } label: {
+                        Label("Stop Scanning", systemImage: "stop.circle.fill")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.red)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
+                } else {
+                    Button {
+                        viewModel.startScanning()
+                    } label: {
+                        Label("Detect Ingredients", systemImage: "camera.viewfinder")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.green)
+                            .clipShape(RoundedRectangle(cornerRadius: 16))
+                    }
                 }
             }
             
@@ -168,7 +229,7 @@ struct ScannerView: View {
                         .foregroundStyle(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.green)
+                        .background(Color.purple)
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                 }
             }

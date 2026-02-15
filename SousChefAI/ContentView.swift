@@ -149,11 +149,11 @@ struct ContentView: View {
             
             Section("API Configuration") {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Overshoot API")
+                    Text("AR Scanning")
                         .font(.headline)
-                    Text(AppConfig.overshootAPIKey == "INSERT_KEY_HERE" ? "Not configured" : "Configured")
+                    Text(AppConfig.enableARScanning ? "Enabled" : "Disabled")
                         .font(.caption)
-                        .foregroundStyle(AppConfig.overshootAPIKey == "INSERT_KEY_HERE" ? .red : .green)
+                        .foregroundStyle(AppConfig.enableARScanning ? .green : .red)
                 }
                 
                 VStack(alignment: .leading, spacing: 8) {

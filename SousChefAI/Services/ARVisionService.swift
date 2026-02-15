@@ -15,9 +15,11 @@ import ARKit
 /// AR-based implementation for vision and spatial scanning
 final class ARVisionService: VisionService, @unchecked Sendable {
     
+    nonisolated init() {}
+    
     // MARK: - VisionService Protocol Implementation
     
-    func detectIngredients(from stream: AsyncStream<CVPixelBuffer>) async throws -> [Ingredient] {
+    nonisolated func detectIngredients(from stream: AsyncStream<CVPixelBuffer>) async throws -> [Ingredient] {
         // Mock implementation - in a real app, this would use ML models
         // to detect ingredients from AR camera frames
         var detectedIngredients: [Ingredient] = []
@@ -49,11 +51,11 @@ final class ARVisionService: VisionService, @unchecked Sendable {
             .sorted { $0.confidence > $1.confidence }
     }
     
-    func detectIngredients(from pixelBuffer: CVPixelBuffer) async throws -> [Ingredient] {
+    nonisolated func detectIngredients(from pixelBuffer: CVPixelBuffer) async throws -> [Ingredient] {
         return try await processARFrame(pixelBuffer)
     }
     
-    func analyzeCookingProgress(from stream: AsyncStream<CVPixelBuffer>, for step: String) async throws -> CookingProgress {
+    nonisolated func analyzeCookingProgress(from stream: AsyncStream<CVPixelBuffer>, for step: String) async throws -> CookingProgress {
         // Mock implementation for cooking progress monitoring
         return CookingProgress(
             isComplete: false,
@@ -64,7 +66,7 @@ final class ARVisionService: VisionService, @unchecked Sendable {
     
     // MARK: - Private Helper Methods
     
-    private func processARFrame(_ pixelBuffer: CVPixelBuffer) async throws -> [Ingredient] {
+    nonisolated private func processARFrame(_ pixelBuffer: CVPixelBuffer) async throws -> [Ingredient] {
         // Mock ingredient detection
         // In a real implementation, this would use Vision framework or ML models
         // to detect objects in the AR camera feed

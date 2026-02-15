@@ -7,13 +7,8 @@
 
 import Foundation
 
-enum AppConfig {
-    // MARK: - Overshoot Vision API
-    /// Overshoot API key for real-time video inference
-    /// [INSERT_OVERSHOOT_API_KEY_HERE]
-    static let overshootAPIKey = "INSERT_KEY_HERE"
-    static let overshootWebSocketURL = "wss://api.overshoot.ai/v1/stream" // Placeholder URL
-    
+
+enum AppConfig: Sendable {
     // MARK: - Google Gemini API
     /// Google Gemini API key for recipe generation and reasoning
     /// [INSERT_GEMINI_API_KEY_HERE]
@@ -26,6 +21,10 @@ enum AppConfig {
     /// 1. Download GoogleService-Info.plist from Firebase Console
     /// 2. Add it to the Xcode project root
     /// 3. Ensure it's added to the target
+    
+    // MARK: - AR Configuration
+    /// Enable AR-based scanning features
+    static let enableARScanning = true
     
     // MARK: - Feature Flags
     static let enableRealTimeDetection = true

@@ -23,7 +23,7 @@ final class ScannerViewModel: ObservableObject {
     private let cameraManager: CameraManager
     private var scanTask: Task<Void, Never>?
     
-    nonisolated init(visionService: VisionService = OvershootVisionService(),
+    nonisolated init(visionService: VisionService = ARVisionService(),
                      cameraManager: CameraManager = CameraManager()) {
         self.visionService = visionService
         self.cameraManager = cameraManager

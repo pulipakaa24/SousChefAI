@@ -44,7 +44,7 @@ final class CookingModeViewModel: ObservableObject {
     }
     
     nonisolated init(recipe: Recipe,
-                     visionService: VisionService = OvershootVisionService(),
+                     visionService: VisionService = ARVisionService(),
                      recipeService: RecipeService = GeminiRecipeService(),
                      cameraManager: CameraManager = CameraManager()) {
         self.recipe = recipe
